@@ -2,6 +2,47 @@
 
 This project implements a program that excels at playing a multi-round version of the game Rock-Paper-Scissors-Lizard-Spock (RPSLS) against opponents using nonequilibrium strategies. RPSLS is a generalization of the classic Rock-Paper-Scissors game, with two additional actions, adding more complexity and reducing the probability of tied outcomes.
 
+I created:
+- RandomBot: This bot picks a random move, then it picks
+the opponents last move and repeats.
+
+The random bot was inspired by the concept of Nash
+Equilibrium and the research of (Mohtavipour and Zideh
+2019) on the detection of collusive strategies in multiagent
+games. The idea behind this bot was that it would maintain
+randomness while also implementing a, fairly simple, strategy.
+- LoseToWinBot: This bot randomly returns one of the 2
+moves that would have lost to the opponent’s previous
+move but repeats its previous move if it won.
+The LoseToWinBot was implemented based on the paper
+from (Wang, Xu, and Zhou 2014) as they found a simple
+conditional response strategy (win-stay lose-shift) to be effective against human rock, paper, scissors players. This was
+due to the tendency of humans to cycle through the choices
+in rock, paper, scissors, which we hypothesized would be
+perpetuated into the models created by others in the class.
+The LoseToWinBot based its moves solely on the previous
+move made by itself and its opponent. If the LoseToWinBot won the previous round the same move would be played
+again. If the opponent won the previous game, the LoseToWinBot would choose a move that would lose to the opponent’s last move and due to the tendency to cycle through
+moves rather than repeat the same move; the LoseToWinBot would be more likely to either win or tie the next round.
+Although very different functionally from the WoLF PHC
+algorithm described in (Bowling and Veloso 2001), the concept of learning fast while losing and slowly when winning
+is captured pretty well by the strategy.
+- comboBot: Plays NashBot, RandomBot, or LoseToWinBot based on the opponent’s last 100 moves.
+The comboBot was inspired by the research of
+(Wang et al. 2020) as they used a mixed strategy that contained several Markov Chain models and selected the move
+from the best performing Markov chain model along with its
+prediction based on a specified number of the recent rounds.
+This “Focus Length” as described in (Wang et al. 2020) was
+also used in a version of our comboBot allowing it to switch
+between the 3 strategies it implements to use the one that
+would be most effective against the most recent strategy being used by the opponent, rather than the just the most recent
+move. This idea of using a mixed strategy that is informed
+by the opponents past moves was also echoed in (Bowling
+and Veloso 2001) and (Wang, Xu, and Zhou 2014); in which
+both of their rock, paper, scissors agents implement mixed
+strategies to adapt to the other player’s current and potentially changing strategy.
+
+
 ## Game Rules
 
 In RPSLS, the five actions are as follows:
@@ -35,7 +76,7 @@ javac bot1.java bot2.java
 
 3. Run a tournament against any two bots 
 ```java
-Tournament bot1.java bot2.java num_rounds
+Tournament bot1 bot2 num_rounds
 ```
 
 ## Features
