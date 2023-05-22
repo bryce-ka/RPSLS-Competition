@@ -30,7 +30,7 @@ To get started with the project, follow these steps:
 2. Compile Action.java, Tournament.java, and the bots to be entered into the tournament
 
 ```java
-javac bot1.java bot2.java num_rounds
+javac bot1.java bot2.java 
 ```
 
 3. Run a tournament against any two bots 
