@@ -11,9 +11,11 @@ Equilibrium and the research of (Mohtavipour and Zideh
 2019) on the detection of collusive strategies in multiagent
 games. The idea behind this bot was that it would maintain
 randomness while also implementing a, fairly simple, strategy.
+
 - LoseToWinBot: This bot randomly returns one of the 2
 moves that would have lost to the opponent’s previous
 move but repeats its previous move if it won.
+
 The LoseToWinBot was implemented based on the paper
 from (Wang, Xu, and Zhou 2014) as they found a simple
 conditional response strategy (win-stay lose-shift) to be effective against human rock, paper, scissors players. This was
@@ -27,8 +29,10 @@ moves rather than repeat the same move; the LoseToWinBot would be more likely to
 Although very different functionally from the WoLF PHC
 algorithm described in (Bowling and Veloso 2001), the concept of learning fast while losing and slowly when winning
 is captured pretty well by the strategy.
+
 - comboBot: Plays NashBot, RandomBot, or LoseToWinBot based on the opponent’s last 100 moves.
 The comboBot was inspired by the research of
+
 (Wang et al. 2020) as they used a mixed strategy that contained several Markov Chain models and selected the move
 from the best performing Markov chain model along with its
 prediction based on a specified number of the recent rounds.
