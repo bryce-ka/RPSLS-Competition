@@ -1,0 +1,138 @@
+combo vs lose 
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot comboBot 500
+LoseToWinBot: 195
+Ties: 116
+comboBot: 189
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot comboBot 500
+LoseToWinBot: 194
+Ties: 113
+comboBot: 193
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot comboBot 500
+LoseToWinBot: 202
+Ties: 105
+comboBot: 193
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot comboBot 500
+LoseToWinBot: 200
+Ties: 97
+comboBot: 203
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot comboBot 500
+LoseToWinBot: 196
+Ties: 96
+comboBot: 208
+
+
+
+random vs lose 
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot RandomBot 500
+LoseToWinBot: 199
+Ties: 114
+RandomBot: 187
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot RandomBot 500
+LoseToWinBot: 176
+Ties: 112
+RandomBot: 212
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot RandomBot 500
+LoseToWinBot: 198
+Ties: 92
+RandomBot: 210
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot RandomBot 500
+LoseToWinBot: 194
+Ties: 89
+RandomBot: 217
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot RandomBot 500
+LoseToWinBot: 202
+Ties: 90
+RandomBot: 208
+
+combo v random 
+
+153328:branthony:gpu0:hw3$ java Tournament comboBot  RandomBot 500
+comboBot: 218
+Ties: 81
+RandomBot: 201
+153328:branthony:gpu0:hw3$ java Tournament comboBot  RandomBot 500
+comboBot: 189
+Ties: 138
+RandomBot: 173
+153328:branthony:gpu0:hw3$ java Tournament comboBot  RandomBot 500
+comboBot: 101
+Ties: 288
+RandomBot: 111
+153328:branthony:gpu0:hw3$ java Tournament comboBot  RandomBot 500
+comboBot: 158
+Ties: 167
+RandomBot: 175
+153328:branthony:gpu0:hw3$ java Tournament comboBot  RandomBot 500
+comboBot: 152
+Ties: 206
+RandomBot: 142
+
+
+all v nash 
+
+
+153328:branthony:gpu0:hw3$ java Tournament comboBot  NashBot 500
+comboBot: 197
+Ties: 99
+NashBot: 204
+153328:branthony:gpu0:hw3$ java Tournament comboBot  NashBot 500
+comboBot: 200
+Ties: 83
+NashBot: 217
+153328:branthony:gpu0:hw3$ java Tournament comboBot  NashBot 500
+comboBot: 191
+Ties: 102
+NashBot: 207
+153328:branthony:gpu0:hw3$ java Tournament comboBot  NashBot 500
+comboBot: 187
+Ties: 108
+NashBot: 205
+153328:branthony:gpu0:hw3$ java Tournament comboBot  NashBot 500
+comboBot: 192
+Ties: 106
+NashBot: 202
+
+
+153328:branthony:gpu0:hw3$ java Tournament RandomBot  NashBot 500
+RandomBot: 200
+Ties: 91
+NashBot: 209
+153328:branthony:gpu0:hw3$ java Tournament RandomBot  NashBot 500
+RandomBot: 191
+Ties: 106
+NashBot: 203
+153328:branthony:gpu0:hw3$ java Tournament RandomBot  NashBot 500
+RandomBot: 199
+Ties: 107
+NashBot: 194
+153328:branthony:gpu0:hw3$ java Tournament RandomBot  NashBot 500
+RandomBot: 198
+Ties: 99
+NashBot: 203
+153328:branthony:gpu0:hw3$ java Tournament RandomBot  NashBot 500
+RandomBot: 208
+Ties: 112
+NashBot: 180
+
+
+
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot  NashBot 500
+LoseToWinBot: 195
+Ties: 114
+NashBot: 191
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot  NashBot 500
+LoseToWinBot: 197
+Ties: 101
+NashBot: 202
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot  NashBot 500
+LoseToWinBot: 219
+Ties: 97
+NashBot: 184
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot  NashBot 500
+LoseToWinBot: 204
+Ties: 110
+NashBot: 186
+153328:branthony:gpu0:hw3$ java Tournament LoseToWinBot  NashBot 500
+LoseToWinBot: 197
+Ties: 87
+NashBot: 216
